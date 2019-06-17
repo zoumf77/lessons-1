@@ -7,30 +7,34 @@ public class BasicTypeDemo {
 		byte b=127;
 		char c='c';
 		short age=50;
+		//易读格式
 		int items=2_147_483_647;
+		//长整型
 		long ms=System.currentTimeMillis();
-		float f=0.03f;
-		double d=100.00d;
 		
 		System.out.println("items="+items);
 		System.out.println("ms="+ms);
 		
-
+		
+		
+		float f=0.03f;
+		double d=100.00d;
+		
 		Boolean isFlase=new Boolean(isTrue);
-		Boolean isRight=isTrue; //这是个什么重要的过程
+		
+		//isTrue是基本数据类型，这个赋值是个什么过程
+		Boolean isRight=isTrue; 
 		
 		Byte b1=new Byte(b);
 		Byte bByte=127;
 		
+		//bByte是个对象实例，这个赋值是个什么过程
 		b=bByte; //这又是什么过程？
 		
-		
-	
 		Integer i1=new Integer(100);
 		Integer i2=new Integer(100);
-		
 
-		
+		//==和equal运算出来是真是假
 		System.out.println("i1==i2 is "+(i1==i2));
 		System.out.println("i1.equal(i2)"+(i1.equals(i2)));
 		
@@ -38,6 +42,7 @@ public class BasicTypeDemo {
 		Integer i3=100;
 		Integer i4=100;
 		
+		//==和equal运算出来是真是假,为什么？
 		System.out.println("i3==i4 is "+(i3==i4));
 		System.out.println("i3.equal(i4)"+(i3.equals(i4)));
 		
@@ -45,7 +50,7 @@ public class BasicTypeDemo {
 		Integer i5=1000;
 		Integer i6=1000;
 		
-	
+		//==和equal运算出来是真是假,为什么？
 		System.out.println("i5==i6 is "+(i5==i6));
 		System.out.println("i5.equal(i6)"+(i5.equals(i6)));
 		
